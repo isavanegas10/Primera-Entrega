@@ -19,8 +19,11 @@ body{
 	width:100%;
 	color:rgb(255, 255, 255); 
 }
-p{
-	padding: 2%;
+.subtitulo p{
+	padding: 2% 10%;
+}
+p {
+	padding:5% 3%; 
 }
 .recuadro{
 	position: absolute;
@@ -30,66 +33,26 @@ p{
 	left: 270px;	
 	top:10%;
 }
-
-
-
-/* menu */
-
-#menu ul {
+#menu {
+	width: 100%;
+	color: rgb(255, 255, 255); 
+}
+.externo{
  	list-style:none;
- 	width: 25%;
-	height: 10%;
-}
-
-/* items del menu */
-
-#menu ul li {
- background-color: rgba(205,136,135,0.5);
-}
-
-/* enlaces del menu */
-
-#menu ul a {
- 	display:block;
- 	text-decoration:none;
- 	position: relative;
-	width: 25%;
-	height: 10%;
-	padding: 10% 20%;
-	color:rgb(255, 255, 255);
-	font-size: 20px;
+ 	width: 40%;
 	background-color: rgba(205,136,135,0.5);
-	margin: 5%;
+	padding-left: 0%;
 }
-
-/* items del menu */
-
-#menu ul li {
- 	position:relative;
- 	float:center;
+.interno{
+	display: none;
+	width: 100%;
+	list-style:none;
+	padding-left: 0%;
 }
-
-/* efecto al pasar el ratón por los items del menu */
-
-#menu ul li:hover {
- 	background-color: rgba(205,136,135);
-}
-/* menu desplegable */
-
-#menu ul ul {
- 	display:none;
- 	position:absolute;
- }
-
-/* items del menu desplegable al pasar el ratón */
-
 #menu ul li:hover > ul {
  	display:block;
- 	text-decoration:none;
- 	position: relative;
-	height: 10%;
-	color:rgb(255, 255, 255);
-	font-size: 20px;
-	background-color: rgba(205,136,135,0.5);
-	margin: 5%
 }
+#menu ul li ul li {
+	padding: 5%;
+}
+
