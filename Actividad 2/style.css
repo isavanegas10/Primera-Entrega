@@ -1,0 +1,48 @@
+body{
+	background: url(pexels.jpg); 
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.recuadro1{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 60%;	
+	left: 20%;
+	height: 30%;
+	top: 15%;
+	display: flex;
+}
+.recuadro2{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 60%;	
+	left: 20%;
+	height: 30%;
+	bottom: 15%;
+	display: flex;
+}
+.img{
+	width: 25%;
+	height: 100%;
+	}
+img{height: 100%;}
+.texto{
+	position: relative;
+	top: 0px;
+	}
+.info{
+	width: 75%;
+	height: 100%;}
+.texto p{
+	color: white;
+	font-size: 40px;
+	margin-top: 0px;
+	text-align: center;
+}
+.info a{
+	background-color: white;
+	color:rgba(0, 0, 0, 1); 
+	padding: 5% 20%;
+	text-decoration: none;}

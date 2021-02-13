@@ -1,0 +1,40 @@
+<script>
+var personas = new Array(0);
+function checkIn() {
+  var persona = prompt("Por favor ingresa tu nombre","");
+  personas.push (persona);
+}
+
+ function checkOut() {
+ 	var persona = prompt("Por favor ingresa tu nombre","");
+ 	var i = personas.indexOf( persona );
+    personas.splice( i, 1 );
+  }
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+		<div class="recuadro1">
+			<div class="img">
+				<img src="harvard.png">
+			</div>
+			<div class="info">
+				<div Class="texto"><center><p>student check-in</p></center></div>
+				<center><a onclick="checkIn()">check-in</a></center>
+			</div>
+		</div>
+		<div class="recuadro2">
+			<div class="img">
+				<img src="harvard.png">
+			</div>
+			<div class="info">
+				<div Class="texto"><center><p>student check-out</p></center></div>
+				<center><a onclick="checkOut()">check-in</a></center>
+			</div>
+		</div>
+</body>
+</html>
