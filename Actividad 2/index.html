@@ -3,14 +3,14 @@ var personas = new Array(0);
 function checkIn() {
   var persona = prompt("Por favor ingresa tu nombre","");
   personas.push (persona);
-  alert(persona+ "fue ingresad@ con exito");
+  alert(persona+ " fue ingresad@ con exito");
 }
 
  function checkOut() {
  	var persona = prompt("Por favor ingresa nombre de la persona que saldrá","");
  	var i = personas.indexOf( persona );
     personas.splice( i, 1 );
-	alert(persona+ "fue eliminad@ con exito");
+	alert(persona+ " fue eliminad@ con exito");
   }
 </script>
 <!DOCTYPE html>
