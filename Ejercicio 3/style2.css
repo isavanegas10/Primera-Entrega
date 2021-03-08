@@ -1,0 +1,26 @@
+body{
+	background: url(pexels.jpg); 
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.recuadro1{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 60%;	
+	left: 20%;
+	height: 30%;
+	top: 35%;
+	padding-top: 2.5%;
+}
+.recuadro1 div{
+	width: 80%;
+	margin-left: 10%;
+	margin-top:2.5%; 
+}
+
+input{
+	width:49%;
+	height: 20%; 
+}

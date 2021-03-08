@@ -1,0 +1,34 @@
+<script>
+var numeros = new Array(0);
+function enviar() {
+	var valor = document.getElementById('1').value;
+	var str = valor.toString();
+    var res = str.split("");
+    var i;
+	for (i = 0; i < res.length; i++) {
+	  numeros.push(parseInt(res[i]));
+	}
+}
+function traer(){
+	var inputNombre = document.getElementById('2');
+  	var mayor = Math.max(...numeros);
+  	inputNombre.value = mayor;
+}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<title></title>
+</head>
+<body onload="hola()">
+		<div class="recuadro1">
+			<div>
+				<input type="text" placeholder="1" id="1" maxlength="5"> <input type="submit" name="a" value="a" onclick="enviar()">
+			</div>
+			<div>
+				<input type="text" placeholder="2" id="2"> <input type="submit" name="b" value="b" onclick="traer()">
+			</div>
+		</div>	
+</body>
+</html>

@@ -1,0 +1,31 @@
+<script>
+function hola() {
+	texto = document.getElementById('txt');
+	var n = 15;
+	contador = setInterval(function(){
+  		if(n<11){
+  			texto.innerHTML = n;
+  			n--;
+  		}
+  		else{n--}
+
+  		if (n<0) {
+			clearInterval(contador);
+			texto.innerHTML = "Terminamos";
+		}
+	},1000);
+	
+}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<title></title>
+</head>
+<body onload="hola()">
+		<div class="recuadro1">
+			<p id="txt">Hola</p>
+		</div>	
+</body>
+</html>
